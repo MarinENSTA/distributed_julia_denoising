@@ -1,16 +1,12 @@
-# Smoother Julia Denoising
+# Distributed Julia Denoising
 
 ## Authors
 
-The base code was written by Feriel ABBOUD, all further modifications, updates and improvement by Marin STAMM
+The base code was written by Feriel ABBOUD, all further modifications, updates and improvement were made by Marin STAMM
 
-## About this version of the project
+## About this project
 
-**This is not the final version of the project**. If you need to use the final version, please refer to appropriate folder. Current folder aims to show the algorithm during its developpment steps.
-
-The goal of this version was to handle better any number of initialised parallel processes. It was made in order to obtain smoother time-speedup curves and a better behaving algorithm evening workload between all processes.
-
-As this proved to be succesful and useful, this is implemented in the final version of the algorithm.
+This project aims to implement the distributed algorithm proposed here https://hal.archives-ouvertes.fr/hal-01942710v2, using the MPI library in Julia.
 
 ## Julia installation 
 This is implemented in julia 1.4.1
