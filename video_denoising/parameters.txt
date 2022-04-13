@@ -1,0 +1,29 @@
+Claire : 
+eta = 3.2e-2;
+alpha = 4.5e-2;
+alpha0 = 0.7108;
+
+Irene : 
+eta = 2.0444e-2;
+alpha = 1.5e-2;
+alpha0 = 0.7108;
+
+Foreman :
+eta = 8e-2;
+alpha = 2e-2;
+alpha0 = 0.7108;
+
+Bus :
+eta = 0.020251;
+alpha = 0.028054;
+alpha0 = 0.95412;
+
+Stefan :
+eta = 0.0014702;
+alpha = 0.06621;
+alpha0 = 0.96044;
+
+Flower :
+eta = 0.029514;
+alpha = 0.060166;
+alpha0 = 0.91304;
