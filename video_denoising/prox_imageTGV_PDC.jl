@@ -6,7 +6,7 @@ function prox_imageTGV_PDC(z, i, eta, alpha, N1_x, N2_x, xmin, xmax, sauv, nb, s
     if(alpha>0)
         betaArrayI = BigBetaArrayI[i];
         motionTab = structMotion[i]["Motion"];
-        var = matread("$(sequence)/Motion/NormXtXm$i.mat");
+        var = matread("../media/$(sequence)/Motion/NormXtXm$i.mat");
         normL = copy(var["normL"]);
     else
         betaArrayI = 0;

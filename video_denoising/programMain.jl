@@ -11,11 +11,11 @@ include("algorithmsDenoise.jl")
 include("startend.jl")
 
 #### SEQUENCE ####
-sequence = "Claire";
+sequence = "Flower";
 # PARAMETERS (PLEASE REFER TO PARAMETERS.TXT FILE FOR EXEMPLE MEDIA)
-eta = 3.2e-2;
-alpha = 4.5e-2;
-alpha0 = 0.7108;
+eta = 0.029514;
+alpha = 0.060166;
+alpha0 = 0.91304;
 
 #### images #####
 T = 72;
@@ -28,11 +28,11 @@ imblurnoisy = Array{Array{Float32}}(undef, T);
 
 
 for i in 1:T
-    II = matread("../media/$(sequence)/ForJuliaDenoise/$(sequence)HR$i.mat");
+    II = matread("../media/$(sequence)/ForJuliaDenoise/$(lowercase(sequence))HR$i.mat");
     I = copy(II["I"]);
     im[i] = I;
 
-    II = matread("../media/$(sequence)/ForJuliaDenoise/$(sequence)LR$i.mat");
+    II = matread("../media/$(sequence)/ForJuliaDenoise/$(lowercase(sequence))LR$i.mat");
     I = copy(II["IBlur"]);
     imblurnoisy[i] = I;
     img[i] = I;

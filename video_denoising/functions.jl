@@ -123,10 +123,10 @@ function  bigStructMotionConstruction(sizeIm, nb_frame,sequence)
         for j in 1:sauv
             indexTab[j] = (i-sauv+j-1);
 
-            var = matread("$(sequence)/Motion/M$(i-sauv+j-1)$(i).mat");
+            var = matread("../media/$(sequence)/Motion/M$(i-sauv+j-1)$(i).mat");
             motionTab[j] = copy(var["Pmat"]);
 
-            var = matread("$(sequence)/Motion/Norm$(i-sauv+j-1)$(i).mat");
+            var = matread("../media/$(sequence)/Motion/Norm$(i-sauv+j-1)$(i).mat");
             normeTab[j] = copy(var["norme"]);
 
         end
@@ -134,10 +134,10 @@ function  bigStructMotionConstruction(sizeIm, nb_frame,sequence)
         for j = 1:nb
             indexTab[j+sauv] = (i+nb-j+1);
 
-            var = matread("$(sequence)/Motion/M$(i+nb-j+1)$(i).mat");
+            var = matread("../media/$(sequence)/Motion/M$(i+nb-j+1)$(i).mat");
             motionTab[j+sauv] = copy(var["Pmat"]);
 
-            var = matread("$(sequence)/Motion/Norm$(i+nb-j+1)$(i).mat");
+            var = matread("../media/$(sequence)/Motion/Norm$(i+nb-j+1)$(i).mat");
             normeTab[j+sauv] = copy(var["norme"]);
 
         end

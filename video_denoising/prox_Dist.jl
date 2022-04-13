@@ -33,7 +33,7 @@ function prox_Dist(imblurnoisy, imbar, param, nb_frame, eta, alpha, alpha0, stru
 
     if(alpha>0)
         for i in 1:T
-            var = matread("$(sequence)/Motion/Beta$i.mat");
+            var = matread("../media/$(sequence)/Motion/Beta$i.mat");
             BigBetaArrayI[i] = copy(var["betaArray"]);
         end
     end
